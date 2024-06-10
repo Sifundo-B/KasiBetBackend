@@ -1,12 +1,13 @@
 package com.KasiBet.KasiBet.entity;
 
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.util.List;
-
+@Getter
+@Setter
+@Entity
 public class Sport {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
